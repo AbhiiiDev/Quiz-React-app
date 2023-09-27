@@ -35,19 +35,19 @@ const [category, setcategory] = useState([]);
     //       }, [])
 
    
-    const handleClick=()=>{
-        if(!name)
-        {
-            setError(true)
-            return;
-        }
-        else
-        {
-            setError(false);
-            fetchQuestions(category);
-           navigate('/quiz');
-        }
-    }
+    // const handleClick=()=>{
+    //     if(!name)
+    //     {
+    //         setError(true)
+    //         return;
+    //     }
+    //     else
+    //     {
+    //         setError(false);
+    //         fetchQuestions(category);
+    //        navigate('/quiz');
+    //     }
+    // }
 
   return (
     <>
@@ -88,7 +88,7 @@ const [category, setcategory] = useState([]);
 {
     Categories.map(item=>
         (   <>
-        <CatBox key={item.value} name={item.category} handleClick={handleClick} />
+        <CatBox key={item.value} name={item.category} fetchQuestions={fetchQuestions} category={item.value} />
         </> )
         )
 }

@@ -1,9 +1,24 @@
 import React, { useState } from 'react'
 import { PropTypes } from 'prop-types';
+import { useNavigate } from 'react-router-dom';
 
 export const CatBox = (props) => {
-
-    const {handleClick}=props;
+const navigate=useNavigate();
+const [error, setError] = useState(false);
+      const handleClick=()=>{
+        if(!name)
+        {
+            setError(true)
+            return;
+        }
+        else
+        {
+            setError(false);
+            props.fetchQuestions(props.category);
+           navigate('/quiz');
+        }
+    }
+    
    
 
 
@@ -31,7 +46,7 @@ const name =props.name;
 }
 CatBox.propTypes = {
     name: PropTypes.string.isRequired,
-    handleClick:PropTypes.func.isRequired,
+    fetchQuestions:PropTypes.func.isRequired,
      // This defines 'category' as a required string prop
   };
 
