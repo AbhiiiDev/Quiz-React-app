@@ -1,0 +1,81 @@
+/* Styling for the responsive image */
+
+    /* .image-container {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        height: 100vh;
+        overflow: hidden;
+    } */
+
+
+/* Add this CSS to adjust brightness and style the overlay text */
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+    filter: brightness(0.5); /* Adjust the brightness as needed (0.7 is less bright) */
+}
+
+/* .overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #00000080; 
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+}
+ */
+
+
+/* Add this CSS to resize the image and center it */
+.image-container {
+    display: flex;
+    justify-content: center;
+   
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.responsive-image {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    position: absolute;
+}
+
+
+
+
+.responsive-image {
+    max-width: 100%; /* Set the maximum width to 100% of its container */
+    height: auto; /* Automatically adjust the height to maintain aspect ratio */
+    display: block; /* Remove any default inline display */
+    margin: 0 auto; /* Center the image horizontally in its container */
+  }
+  .category-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow boxes to wrap to the next line if the container width is exceeded */
+    justify-content: space-evenly; /* Start from the left side */
+  }
+
+  .select_quiz {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 100%;
+    flex: 0.8;
+    color: black;
+    font-size: large;
+    justify-content: center;
+    align-items: center;
+  }

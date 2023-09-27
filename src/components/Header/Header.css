@@ -1,0 +1,49 @@
+/* .title {
+    text-transform: uppercase;
+    font-size: 8vw;
+    font-family: "Montserrat", sans-serif;
+    cursor: pointer;
+  }
+  
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .divider {
+    margin: 10px;
+    width: 100%;
+    background-color: grey;
+  } */
+
+
+  /* Styling for the header container */
+.header {
+    background-color: #f0f420; /* Blue background color */
+    color: #fff; /* White text color */
+    padding: 10px 20px; /* Padding to create space around content */
+    display: flex; /* Use flexbox to center content horizontally */
+    justify-content: center; /* Space between title and other elements */
+    align-items: center; /* Center vertically */
+   margin-bottom: 5px;
+  }
+  
+  /* Styling for the title link */
+  .titleName {
+    font-size: 24px; /* Adjust font size as needed */
+    text-decoration: none; /* Remove underlines from the link */
+    font-weight: bold; /* Make the text bold */
+    letter-spacing: 2px; /* Add some letter spacing for style */
+  }
+  
+  /* Hover effect for the title link */
+  .titleName:hover {
+    text-decoration: underline; /* Add underline on hover */
+  }
+  
+  /* Add a shadow to the header for depth */
+  .header {
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
