@@ -10,3 +10,5 @@ Currently, two official plugins are available:
 
 # Live Website link: 
 https://react-quizzing.netlify.app/
+
+# Feel free to commit-and make changes.
